@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+/* ----------------------- BODY OF HOMEPAGE ------------------------- */
+section.main-body {
+  /* background-image: url(../Images/asphalt-road.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; */
+  div.body-titles {
+    margin-top: 150px;
+    text-align: center;
+    h2.bem-vindo-title {
+      font-family: "Alfa Slab One", serif;
+      font-weight: 100;
+      font-size: 60px;
+      color: goldenrod;
+      text-shadow: 3px 3px black;
+    }
+  }
+  div.body-text-edit {
+    display: flex;
+    justify-content: center;
+    div.body-text {
+      margin-top: 80px;
+      background-color: white;
+      font-size: 30px;
+      text-align: justify;
+      width: 700px;
+      border: solid 10px gold;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      padding-top: 20px;
+      padding-left: 60px;
+      padding-right: 30px;
+      ul {
+        list-style-image: url(../Icons/topic-icon.gif);
+      }
+      li {
+        margin-bottom: 30px;
+        span.first-letter {
+          font-family: "Great Vibes", cursive;
+          font-weight: 700;
+          font-size: 50px;
+          text-shadow: 3px 3px gold;
+          background-color: gray;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  img.bag-image {
+    width: 270px;
+    position: absolute;
+    z-index: 2;
+    top: 830px;
+    left: 30px;
+  }
+  img.locker-image {
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    top: 1400px;
+    right: 17px;
+    rotate: 35deg;
+  }
+  img.plane-image {
+    width: 320px;
+    position: absolute;
+    z-index: 2;
+    top: 2100px;
+    left: -13px;
+    rotate: -28deg;
+  }
+}

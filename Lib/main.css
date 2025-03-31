@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* -------------------------- MAIN BANNER -------------------------- */
+header.main-banner {
+  /* background-image: url(../Images/road.png); */
+  background-image: url(../Images/road2.png);
+  background-color: black;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  div.main-banner-titles-box {
+    margin-top: 160px;
+    h4.banner-subtitle {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+}
+/* ---------------------------- BODY ------------------------------- */
+section.main-body {
+  /* background-image: url(../Images/asphalt-road.jpg); */
+  background-color: rgb(34, 34, 34);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+/* ---------------------- MAIN MAVIGATION BAR ----------------------- */
+div.main-navigation-bar {
+  background-image: url(../Images/menu-road.png);
+  background-size: cover;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  a.main-navigationbar-link {
+    text-decoration: none;
+    h2.main-navigation-bar-option {
+      font-family: "Spicy Rice", serif;
+      font-weight: 400;
+      font-size: 30px;
+      color: white;
+      margin-top: 42px;
+      cursor: url(../Icons/car-icon.png), auto;
+    }
+  }
+}
+/* --------------------------------------------------------------------- */
+hr {
+  height: 5px;
+  background-color: yellow;
+  border: none;
+}
+footer.bottom-banner {
+  background-color: black;
+  height: 150px;
+  div.bottom-banner-ojects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img.bottom-banner-logo {
+      width: 120px;
+      height: 120px;
+    }
+    h4.site-info {
+      color: white;
+    }
+  }
+}

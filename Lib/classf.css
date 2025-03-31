@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+div.screen-division {
+  display: grid;
+  grid-template-columns: 311px 1030px;
+  div.side-menu {
+    display: block;
+    justify-content: center;
+    background-color: black;
+    border-right: solid 5px gold;
+    width: 307px;
+    height: 100%;
+    div.side-menu-logo {
+      position: fixed;
+      img.logo-citypage {
+        width: 300px;
+        height: 300px;
+        margin-top: -20px;
+      }
+    }
+    div.side-menu-brazil-region {
+      font-size: 16px;
+      margin-left: 20px;
+      margin-top: 220px;
+      position: fixed;
+      h4.title-region-side-menu {
+        color: gold;
+        margin-top: 40px;
+      }
+      div.brazil-map {
+        img.brazil-region-north {
+          width: 156px;
+          height: 150px;
+          position: absolute;
+          z-index: 1;
+          top: 90px;
+          left: 4px;
+        }
+        img.brazil-region-northeast {
+          width: 124px;
+          height: 126px;
+          position: absolute;
+          z-index: 2;
+          top: 146px;
+          left: 138px;
+        }
+        img.brazil-region-middlewest {
+          width: 88px;
+          height: 142px;
+          position: absolute;
+          z-index: 4;
+          top: 188px;
+          left: 73px;
+        }
+        img.brazil-region-southeast {
+          width: 108px;
+          height: 92px;
+          position: absolute;
+          z-index: 3;
+          top: 245px;
+          left: 110px;
+          rotate: -6deg;
+        }
+        img.brazil-region-south {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          z-index: 5;
+          top: 321px;
+          left: 91px;
+          rotate: 1deg;
+        }
+      }
+    }
+  }
+  div.banner-navigationbar-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    div.main-banner {
+      background-image: url(../Images/road.png);
+      background-size: cover;
+      height: 300px;
+      div.main-banner-titles-box {
+        margin-top: 160px;
+        h4.banner-subtitle {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+    div.main-navigation-bar {
+      background-image: url(../Images/menu-road.png);
+      background-size: cover;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      a.main-navigationbar-link {
+        text-decoration: none;
+        h2.main-navigation-bar-option {
+          font-family: "Spicy Rice", serif;
+          font-weight: 400;
+          font-size: 25px;
+          color: white;
+          margin-top: 42px;
+          cursor: url(../Icons/car-icon.png), auto;
+        }
+      }
+    }
+    div.regions-searchbox-edit {
+      display: flex;
+      justify-content: center;
+      background-color: rgb(34, 34, 34);
+      div.regions-searchbox {
+        div.regions-searchbox-title {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          h2.title-regions-searchbox {
+            text-align: center;
+            font-family: "Alfa Slab One", serif;
+            font-weight: 100;
+            font-size: 60px;
+            color: gold;
+            text-shadow: 3px 3px black;
+          }
+        }
+        div.regions-searchbox-hint1 {
+          width: 800px;
+          background-color: white;
+          border: solid 10px gold;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 30px;
+        }
+        div.regions-searchbox-hint2 {
+          width: 800px;
+          background-color: white;
+          border: solid 10px gold;
+          border-radius: 20px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+        div.regions-searchbox-hint3 {
+          width: 800px;
+          background-color: white;
+          border: solid 10px gold;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 50px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    hr {
+      height: 5px;
+      background-color: gold;
+      border: none;
+    }
+    div.bottom-banner {
+      background-color: black;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      div.bottom-banner-logo-box {
+        img.bottom-banner-logo {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      div.bottom-banner-text-box {
+        text-align: center;
+        h4.site-info {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+p {
+  font-size: 30px;
+  text-align: justify;
+}
