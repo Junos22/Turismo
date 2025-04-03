@@ -203,6 +203,11 @@ div.screen-division {
           color: white;
         }
       }
+      img.bottom-banner-email-gif {
+        width: 100px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
     }
   }
 }

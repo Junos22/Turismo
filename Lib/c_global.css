@@ -131,7 +131,7 @@ div.screen-division {
         padding: 50px;
         margin-top: 70px;
         margin-bottom: 50px;
-        #anapolis {
+        #city-name {
           font-weight: bold;
           color: black;
           font-size: 100px;
@@ -139,7 +139,7 @@ div.screen-division {
           text-align: center;
           margin-bottom: 50px;
         }
-        img.ango-ph {
+        img.city-ph {
           float: left;
           width: 300px;
           height: 200px;
@@ -193,7 +193,7 @@ div.screen-division {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 100px;
+      gap: 150px;
       div.bottom-banner-logo-box {
         img.bottom-banner-logo {
           width: 120px;
@@ -205,6 +205,11 @@ div.screen-division {
         h4.site-info {
           color: white;
         }
+      }
+      img.bottom-banner-email-gif {
+        width: 100px;
+        margin-right: 20px;
+        cursor: pointer;
       }
     }
   }

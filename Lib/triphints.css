@@ -11,10 +11,11 @@ section.main-body {
     margin-top: 150px;
     text-align: center;
     h2.bem-vindo-title {
+      text-align: center;
       font-family: "Alfa Slab One", serif;
       font-weight: 100;
       font-size: 60px;
-      color: goldenrod;
+      color: gold;
       text-shadow: 3px 3px black;
     }
   }

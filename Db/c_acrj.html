@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
-    <link href="../Lib/c_acrj.css" rel="stylesheet" />
+    <link href="../Lib/c_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -106,8 +106,8 @@
         <!---------------------------------------------------------------------->
         <div class="city-text-box-edit">
           <div class="city-text-box">
-            <h2 id="arraial-cabo">Arraial do Cabo</h2>
-            <img class="acrj-ph" src="../Images/City-Images/acrj1.webp" />
+            <h2 id="city-name">Arraial do Cabo</h2>
+            <img class="city-ph" src="../Images/City-Images/acrj1.webp" />
             <p>
               <span class="first-letter">A</span>rraial do Cabo, localizado na
               Região dos Lagos, no estado do Rio de Janeiro, é um dos destinos
@@ -134,7 +134,7 @@
             <h3 id="turismo-acrj">Principais pontos turísticos</h3>
             <ol>
               <li class="olist">Praia do Farol</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj2.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj2.jpg" />
               <p>
                 A Praia do Farol é uma das mais famosas e deslumbrantes de
                 Arraial do Cabo, com águas cristalinas e areia branca.
@@ -150,7 +150,7 @@
                 snorkeling e mergulho.
               </p>
               <li class="olist">Praia do Pontal do Atalaia</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj3.webp" />
+              <img class="city-ph" src="../Images/City-Images/acrj3.webp" />
               <p>
                 Conhecida por suas águas claras e tranquilas, a Praia do Pontal
                 do Atalaia é cercada por grandes falésias e tem um acesso um
@@ -164,7 +164,7 @@
                 de esportes aquáticos, como snorkeling e stand-up paddle.
               </p>
               <li class="olist">Praia do Forno</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj4.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj4.jpg" />
               <p>
                 A Praia do Forno é uma pequena baía cercada por montanhas e
                 vegetação nativa, com águas calmas e claras. O acesso à praia
@@ -180,7 +180,7 @@
             <h3 id="gastronomia-acrj">Principais pontos gastronômicos</h3>
             <ol>
               <li class="olist">Casa da Piedra</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj5.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj5.jpg" />
               <p>
                 A Casa da Piedra é um dos restaurantes mais elogiados de Arraial
                 do Cabo, o ambiente é charmoso e repleto de detalhes na
@@ -199,7 +199,7 @@
                 <li class="ulist"><b>Localização:</b> Praia dos Anjos.</li>
               </ul>
               <li class="olist">Restaurante Garrafa de Nansen</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj6.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj6.jpg" />
               <p>
                 O restaurante Garrafa de Nansen é um estabelecimento acolhedor
                 que oferece uma variedade de pratos feitos com ingredientes
@@ -217,7 +217,7 @@
                 <li class="ulist"><b>Localização:</b> Praia dos Anjos.</li>
               </ul>
               <li class="olist">El Farol Bar</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj7.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj7.jpg" />
               <p>
                 O El Farol Bar é parada obrigatória para quem pensa em curtir a
                 noite em Arraial. Com atmosfera despojada e serviço de
@@ -239,7 +239,7 @@
             <h3 id="cultura-acrj">Principais pontos culturais</h3>
             <ol>
               <li class="olist">Igreja de Nossa Senhora dos Remédios</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj8.jpg" />
+              <img class="city-ph" src="../Images/City-Images/acrj8.jpg" />
               <p>
                 A Igreja de Nossa Senhora dos Remédios é um dos marcos
                 históricos de Arraial do Cabo, com uma arquitetura simples e
@@ -258,7 +258,7 @@
                 </li>
               </ul>
               <li class="olist">Museu Oceanográfico</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj9.webp" />
+              <img class="city-ph" src="../Images/City-Images/acrj9.webp" />
               <p>
                 O Museu Oceanográfico de Arraial do Cabo é dedicado à
                 preservação e ao estudo da vida marinha da região. O museu
@@ -276,7 +276,7 @@
                 </li>
               </ul>
               <li class="olist">Cultural Center</li>
-              <img class="acrj-ph" src="../Images/City-Images/acrj10.jpeg" />
+              <img class="city-ph" src="../Images/City-Images/acrj10.jpeg" />
               <p>
                 O Centro Cultural de Arraial do Cabo promove diversas atividades
                 culturais, incluindo exposições de arte, apresentações musicais
@@ -307,9 +307,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
         <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

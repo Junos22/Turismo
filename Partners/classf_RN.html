@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
     <link href="../Lib/classf_RN.css" rel="stylesheet" />
+    <link href="../Lib/classf_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -121,12 +122,13 @@
         <!---------------------------------------------------------------------->
         <!---->
         <!----------------------- STATES AND CITYS PARTERS --------------------->
-        <div class="regionN-searchbox-edit">
-          <div class="regionN-searchbox">
-            <div class="regionN-searchbox-title">
-              <h2 class="title-regionN-searchbox">REGIÃO NORTE</h2>
+        <div class="regionXX-searchbox-edit">
+          <div class="regionXX-searchbox">
+            <div class="regionXX-searchbox-title">
+              <h2 class="title-regionXX-searchbox">REGIÃO NORTE</h2>
             </div>
             <div id="regionN-AC">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Acre (AC)</h3>
               <div class="city-state">
                 <h2 class="city-title">Rio Branco</h2>
@@ -174,7 +176,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/lacaveriobranco/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/lacaveriobranco/')"
                         >
                           www.facebook.com/lacaveriobranco
                         </a>
@@ -193,12 +196,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Isaura Parente 358, Bosque - Rio Branco
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationLaCave()"
+                        >
+                          Rua Isaura Parente, 358 - Bosque - Rio Branco
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationLaCave() {
+                    var WindowLaCave = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowLaCave.document.write("<body bgcolor=black>");
+                    WindowLaCave.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.633204001608!2d-67.82014052609463!3d-9.964444006630428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c5a7aeaed91%3A0x64bd218cdf184fc6!2sR.%20Isaura%20Parente%2C%20358%20-%20Bosque%2C%20Rio%20Branco%20-%20AC%2C%2069900-472!5e0!3m2!1sen!2sbr!4v1743615650923!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowLaCave.document.write("<br/><br/>");
+                    WindowLaCave.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -243,7 +271,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/vemprodeckacre"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/vemprodeckacre')"
                         >
                           www.facebook.com/vemprodeckacre
                         </a>
@@ -262,12 +291,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Getúlio Vargas 1782, - Bosque - Rio Branco
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationDeck()"
+                        >
+                          Avenida Getúlio Vargas, 1782 - Bosque - Rio Branco
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationDeck() {
+                    var WindowDeck = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowDeck.document.write("<body bgcolor=black>");
+                    WindowDeck.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.662574746414!2d-67.81756762609467!3d-9.962006206593271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c597ee17e17%3A0x81ec1fc8d40f7bd5!2sAv.%20Get%C3%BAlio%20Vargas%2C%201782%20-%20Bosque%2C%20Rio%20Branco%20-%20AC%2C%2069900-613!5e0!3m2!1sen!2sbr!4v1743616128463!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowDeck.document.write("<br/><br/>");
+                    WindowDeck.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -312,7 +366,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/people/Restaurante-Cuzco/100080763499262/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/people/Restaurante-Cuzco/100080763499262/')"
                         >
                           www.facebook.com/people/Restaurante-Cuzco/100080763499262
                         </a>
@@ -331,16 +386,42 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Nações Unidas, 288 - ao lado do Hotel Maju - Rio
-                        Branco
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationCuzco()"
+                        >
+                          Avenida Nações Unidas, 288 - ao lado do Hotel Maju -
+                          Rio Branco
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationCuzco() {
+                    var WindowCuzco = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowCuzco.document.write("<body bgcolor=black>");
+                    WindowCuzco.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.6386984548835!2d-67.8134293260947!3d-9.963988006623477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c58228d937d%3A0x668f190812def399!2sAv.%20Na%C3%A7%C3%B5es%20Unidas%2C%20288%20-%20Bosque%2C%20Rio%20Branco%20-%20AC%2C%2069900-715!5e0!3m2!1sen!2sbr!4v1743616478068!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowCuzco.document.write("<br/><br/>");
+                    WindowCuzco.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionN-AP">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Amapá (AP)</h3>
               <div class="city-state">
                 <h2 class="city-title">Macapá</h2>
@@ -388,7 +469,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/313restaurante/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/313restaurante/')"
                         >
                           www.facebook.com/313restaurante
                         </a>
@@ -407,15 +489,41 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Iracema Carvao Nunes, 313 - Centro - Macapá
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationTrezentosTreze()"
+                        >
+                          Avenida Iracema Carvao Nunes, 313 - Centro - Macapá
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationTrezentosTreze() {
+                    var WindowTrezentosTreze = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowTrezentosTreze.document.write("<body bgcolor=black>");
+                    WindowTrezentosTreze.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8173807748108!2d-51.05713872622047!3d0.03932106438866186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61e11df1a94541%3A0x492199b4678b4e3f!2sAv.%20Iracema%20Carv%C3%A3o%20Nunes%2C%20313%20-%20Central%2C%20Macap%C3%A1%20-%20AP%2C%2068900-099!5e0!3m2!1sen!2sbr!4v1743617443070!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowTrezentosTreze.document.write("<br/><br/>");
+                    WindowTrezentosTreze.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionN-AM">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Amazonas (AM)</h3>
               <div class="city-state">
                 <h2 class="city-title">Manaus</h2>
@@ -463,7 +571,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.restaurantealentejo.com.br/"
+                          href=""
+                          onclick="window.open('https://www.restaurantealentejo.com.br/')"
                         >
                           www.restaurantealentejo.com.br
                         </a>
@@ -482,12 +591,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Pará, 555 - Nossa Senhora das Graças - Manaus
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationAlentejo()"
+                        >
+                          Rua Pará, 555 - Nossa Senhora das Graças - Manaus
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationAlentejo() {
+                    var WindowAlentejo = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowAlentejo.document.write("<body bgcolor=black>");
+                    WindowAlentejo.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.944566330231!2d-60.02045182619915!3d-3.1093688403340214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c055103624ee1%3A0x2446584a5aaa4422!2sR.%20Par%C3%A1%2C%20555%20-%20Nossa%20Sra.%20das%20Gracas%2C%20Manaus%20-%20AM%2C%2069099-182!5e0!3m2!1sen!2sbr!4v1743617680980!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowAlentejo.document.write("<br/><br/>");
+                    WindowAlentejo.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -530,7 +664,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/vinhedorioemar/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/vinhedorioemar/')"
                         >
                           www.facebook.com/vinhedorioemar
                         </a>
@@ -549,15 +684,41 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Rio Purus, 5 - Nossa Senhora das Graças - Manaus
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationVinhedo()"
+                        >
+                          Rua Rio Purus, 5 - Nossa Senhora das Graças - Manaus
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationVinhedo() {
+                    var WindowVinhedo = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowVinhedo.document.write("<body bgcolor=black>");
+                    WindowVinhedo.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.942415411051!2d-60.024031426199!3d-3.109938240336344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c0588de0e7b73%3A0xda63c8cf5a625deb!2sR.%20Rio%20Pur%C3%BAs%2C%205%20-%20Nossa%20Sra.%20das%20Gra%C3%A7as%2C%20Manaus%20-%20AM%2C%2069053-050!5e0!3m2!1sen!2sbr!4v1743617982866!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowVinhedo.document.write("<br/><br/>");
+                    WindowVinhedo.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionN-PA">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Pará (PA)</h3>
               <div class="city-state">
                 <h2 class="city-title">Belém</h2>
@@ -605,7 +766,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://veroacai.com.br/lp/"
+                          href=""
+                          onclick="window.open('https://veroacai.com.br/lp/')"
                         >
                           veroacai.com.br/lp
                         </a>
@@ -624,12 +786,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Travessa Dom Pedro I, 599 - Umarizal - Belém
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationVerAcai()"
+                        >
+                          Travessa Dom Pedro I, 599 - Umarizal - Belém
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationVerAcai() {
+                    var WindowVerAcai = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowVerAcai.document.write("<body bgcolor=black>");
+                    WindowVerAcai.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5632648299356!2d-48.490782426212554!3d-1.4371560358071453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48eafe51bdb21%3A0xf50cebf6a54a2c61!2sTv.%20Dom%20Pedro%20I%2C%20599%20-%20Umarizal%2C%20Bel%C3%A9m%20-%20PA%2C%2066050-100!5e0!3m2!1sen!2sbr!4v1743621673379!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowVerAcai.document.write("<br/><br/>");
+                    WindowVerAcai.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -690,6 +877,7 @@
               </div>
             </div>
             <div id="regionN-RO">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Rondônia (RO)</h3>
               <div class="city-state">
                 <h2 class="city-title">Porto Velho</h2>
@@ -753,6 +941,7 @@
               </div>
             </div>
             <div id="regionN-RR">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Roraima (RR)</h3>
               <div class="city-state">
                 <h2 class="city-title">Boa Vista</h2>
@@ -802,7 +991,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/tapiocariacangaco/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/tapiocariacangaco/')"
                         >
                           www.facebook.com/tapiocariacangaco
                         </a>
@@ -821,13 +1011,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Brigadeiro Eduardo Gomes, 386 - Aparecida - Boa
-                        Vista
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationCangaco()"
+                        >
+                          Avenida Brigadeiro Eduardo Gomes, 386 - Aparecida -
+                          Boa Vista
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationCangaco() {
+                    var WindowCangaco = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowCangaco.document.write("<body bgcolor=black>");
+                    WindowCangaco.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.9014483986866!2d-60.66853372622556!3d2.844789454950699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d9308a8de8f42a7%3A0xe0161d4f959268bc!2sAv.%20Brg.%20Eduardo%20Gomes%2C%20386%20-%20Aparecida%2C%20Boa%20Vista%20-%20RR%2C%2069305-455!5e0!3m2!1sen!2sbr!4v1743621939695!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowCangaco.document.write("<br/><br/>");
+                    WindowCangaco.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -872,7 +1087,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/churrascariabhuritys_oficial/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/churrascariabhuritys_oficial/')"
                         >
                           Instagram: @churrascariabhuritys_oficial
                         </a>
@@ -891,15 +1107,41 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua João de Alencar, 1944 - Aeroporto - Rio Branco
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationBhurity()"
+                        >
+                          Rua João de Alencar, 1944 - Aeroporto - Rio Branco
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationBhurity() {
+                    var WindowBhurity = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowBhurity.document.write("<body bgcolor=black>");
+                    WindowBhurity.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.8961789373784!2d-60.709147326225484!3d2.846313754942079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d930f6383508363%3A0xa05eaf9f95eae67f!2sR.%20Jo%C3%A3o%20de%20Alencar%2C%201944%20-%20Aeroporto%2C%20Boa%20Vista%20-%20RR%2C%2069310-065!5e0!3m2!1sen!2sbr!4v1743622275283!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowBhurity.document.write("<br/><br/>");
+                    WindowBhurity.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionN-TO">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Tocantins (TO)</h3>
               <div class="city-state">
                 <h2 class="city-title">Palmas</h2>
@@ -947,7 +1189,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/veleirosdosolrestaurante/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/veleirosdosolrestaurante/')"
                         >
                           Instagram: @veleirosdosolrestaurante
                         </a>
@@ -966,12 +1209,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Quadra 402, Lo 09 - Plano Diretor Sul - Palmas
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationVeleiros()"
+                        >
+                          Quadra 402, Lo 09 - Plano Diretor Sul - Palmas
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationVeleiros() {
+                    var WindowVeleiros = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowVeleiros.document.write("<body bgcolor=black>");
+                    WindowVeleiros.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.7083969694922!2d-48.33632842608956!3d-10.20431901033555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b34b3cef591ef%3A0xcd29c34138c0499c!2sQ.%20402%20Sul%20Avenida%20LO%209%20-%20Plano%20Diretor%20Sul%2C%20Palmas%20-%20TO!5e0!3m2!1sen!2sbr!4v1743622704832!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowVeleiros.document.write("<br/><br/>");
+                    WindowVeleiros.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -1014,7 +1282,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/RestauranteTabuPalmas/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/RestauranteTabuPalmas/')"
                         >
                           facebook.com/RestauranteTabuPalmas
                         </a>
@@ -1033,12 +1302,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Teotonio Segurado S/N Qd. 801 - Palmas
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationTabu()"
+                        >
+                          Qd 801 Sul, Av. Joaquim Teotônio Segurado, Lote 5 -
+                          Plano Diretor Sul - Palmas
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationTabu() {
+                    var WindowTabu = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowTabu.document.write("<body bgcolor=black>");
+                    WindowTabu.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3742620176354!2d-48.336697426088996!3d-10.23136851075921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b348b7504ce69%3A0x62718471b269d7b9!2sRestaurante%20Tabu!5e0!3m2!1sen!2sbr!4v1743623332818!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowTabu.document.write("<br/><br/>");
+                    WindowTabu.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -1081,7 +1376,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/domvergiliop/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/domvergiliop/')"
                         >
                           www.facebook.com/domvergiliop
                         </a>
@@ -1100,12 +1396,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. JK, 103 - Norte 159 Saida para Paraiso - Palmas
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationDVergilio()"
+                        >
+                          Av. Juscelino Kubitscheck, 159 - Plano Diretor Norte -
+                          Palmas
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationDVergilio() {
+                    var WindowDVergilio = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowDVergilio.document.write("<body bgcolor=black>");
+                    WindowDVergilio.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.95802338716!2d-48.34261402608999!3d-10.184064410019099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cb155c4ba48f%3A0x4545eea75a168c0e!2sAv.%20Juscelino%20Kubitscheck%2C%20159%20-%20Plano%20Diretor%20Norte%2C%20Palmas%20-%20TO%2C%2077001-014!5e0!3m2!1sen!2sbr!4v1743623758859!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowDVergilio.document.write("<br/><br/>");
+                    WindowDVergilio.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <h2 class="city-title">Araguaína</h2>
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
@@ -1163,12 +1485,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Aparecida, 293 - São João - Araguaína
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationFontana()"
+                        >
+                          Rua Aparecida, 293 - São João - Araguaína
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationFontana() {
+                    var WindowFontana = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowFontana.document.write("<body bgcolor=black>");
+                    WindowFontana.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.4097616715494!2d-48.19771662614639!3d-7.193999270611564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90c4a1992ee47%3A0x4f15de5740c30bde!2sR.%20Aparecida%2C%20293%20-%20S%C3%A3o%20Jo%C3%A3o%2C%20Aragua%C3%ADna%20-%20TO%2C%2077807-110!5e0!3m2!1sen!2sbr!4v1743624179174!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowFontana.document.write("<br/><br/>");
+                    WindowFontana.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
           </div>
@@ -1185,9 +1532,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
-        <!----------------------------------------------------------------->
+        <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

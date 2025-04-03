@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
     <link href="../Lib/classf_RNE.css" rel="stylesheet" />
+    <link href="../Lib/classf_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -133,10 +134,10 @@
         <!---------------------------------------------------------------------->
         <!---->
         <!----------------------- STATES AND CITYS PARTERS --------------------->
-        <div class="regionNE-searchbox-edit">
-          <div class="regionNE-searchbox">
-            <div class="regionNE-searchbox-title">
-              <h2 class="title-regionNE-searchbox">REGIÃO NORDESTE</h2>
+        <div class="regionXX-searchbox-edit">
+          <div class="regionXX-searchbox">
+            <div class="regionXX-searchbox-title">
+              <h2 class="title-regionXX-searchbox">REGIÃO NORDESTE</h2>
             </div>
             <div id="regionNE-AL">
               <h3 class="title-state">Alagoas (AL)</h3>
@@ -184,7 +185,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/mahrgastronomia/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/mahrgastronomia/')"
                         >
                           www.instagram.com/mahrgastronomia
                         </a>
@@ -203,13 +205,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Industrial Breno Lins Cansanção, 49 - Jatiúca -
-                        Maceió
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationMahr()"
+                        >
+                          Rua Industrial Breno Lins Cansanção, 49 - Jatiúca -
+                          Maceió
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationMahr() {
+                    var WindowMahr = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowMahr.document.write("<body bgcolor=black>");
+                    WindowMahr.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.3384567189323!2d-35.70738302610116!3d-9.652094101945723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145b101220fa3%3A0x103cacee456e93ce!2sR.%20Industrial%20Breno%20Lins%20Cansan%C3%A7%C3%A3o%2C%2049%20-%20Jati%C3%BAca%2C%20Macei%C3%B3%20-%20AL%2C%2057036-210!5e0!3m2!1sen!2sbr!4v1743626321899!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowMahr.document.write("<br/><br/>");
+                    WindowMahr.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-BA">
@@ -260,7 +287,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://vinifigueiragastronomia.com.br/"
+                          href=""
+                          onclick="window.open('https://vinifigueiragastronomia.com.br/')"
                         >
                           vinifigueiragastronomia.com.br
                         </a>
@@ -279,13 +307,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Travessa Bartholomeu de Gusmão, 140 - Rio Vermelho -
-                        Salvador
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationViniF()"
+                        >
+                          Travessa Bartholomeu de Gusmão, 140 - Rio Vermelho -
+                          Salvador
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationViniF() {
+                    var WindowViniF = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowViniF.document.write("<body bgcolor=black>");
+                    WindowViniF.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.41618057096!2d-38.499730426023035!3d-13.009148360563165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716035a21497a5b%3A0x2e9ea18313556461!2sTravessa%20Bartholomeu%20de%20Gusm%C3%A3o%2C%20140%20-%20Rio%20Vermelho%2C%20Salvador%20-%20BA%2C%2041950-310!5e0!3m2!1sen!2sbr!4v1743627542814!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowViniF.document.write("<br/><br/>");
+                    WindowViniF.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -330,7 +383,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/jabu_salvador/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/jabu_salvador/')"
                         >
                           www.instagram.com/jabu_salvador
                         </a>
@@ -349,12 +403,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Eurycles de Mattos, 191 - Rio Vermelho - Salvador
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationJabu()"
+                        >
+                          Rua Eurycles de Mattos, 191 - Rio Vermelho - Salvador
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationJabu() {
+                    var WindowJabu = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowJabu.document.write("<body bgcolor=black>");
+                    WindowJabu.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3985700733883!2d-38.498714526023086!3d-13.01027176058582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716035a0d5dcdc7%3A0x570102e4888d45f0!2sRua%20Eurycles%20de%20Mattos%2C%20191%20-%20Rio%20Vermelho%2C%20Salvador%20-%20BA%2C%2041950-250!5e0!3m2!1sen!2sbr!4v1743629328937!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowJabu.document.write("<br/><br/>");
+                    WindowJabu.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-CE">
@@ -478,12 +557,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. Ivan Loureiro, 04 - Ponta D'areia - São Luís
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationNumar()"
+                        >
+                          Av. Ivan Loureiro, 04 - Ponta D'areia - São Luís
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationNumar() {
+                    var WindowNumar = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowNumar.document.write("<body bgcolor=black>");
+                    WindowNumar.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.0234209646965!2d-44.31420832620462!3d-2.4991690381521723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68c1a7e84b50d%3A0xf130bde3cf21fed8!2sChamps%20Mall%20-%20Av.%20Ivan%20Loureiro%2C%2004%20-%20Ponta%20D&#39;areia%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%2065077-558!5e0!3m2!1sen!2sbr!4v1743629854990!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowNumar.document.write("<br/><br/>");
+                    WindowNumar.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-PB">
@@ -536,7 +640,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/PortoRestauranteJP"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/PortoRestauranteJP')"
                         >
                           www.facebook.com/PortoRestauranteJP
                         </a>
@@ -555,13 +660,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Antônio Carlos Araújo, 60 - Cabo Branco - João
-                        Pessoa
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationPortoSessenta()"
+                        >
+                          Rua Antônio Carlos Araújo, 60 - Cabo Branco - João
+                          Pessoa
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationPortoSessenta() {
+                    var WindowPortoSessenta = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowPortoSessenta.document.write("<body bgcolor=black>");
+                    WindowPortoSessenta.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9613889854977!2d-34.826346826147436!3d-7.130463069932049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc2d40a047e1b%3A0x249b37b6436d3663!2sR.%20Ant%C3%B4nio%20Carlos%20Ara%C3%BAjo%2C%2060%20-%20Cabo%20Branco%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058045-250!5e0!3m2!1sen!2sbr!4v1743630364610!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowPortoSessenta.document.write("<br/><br/>");
+                    WindowPortoSessenta.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -667,7 +797,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/downtownrecife/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/downtownrecife/')"
                         >
                           www.instagram.com/downtownrecife
                         </a>
@@ -686,12 +817,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Antigo Tenorio, 105 - Centro - Recife
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationDownTown()"
+                        >
+                          Rua Antigo Tenorio, 105 - Centro - Recife
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationDownTown() {
+                    var WindowDownTown = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowDownTown.document.write("<body bgcolor=black>");
+                    WindowDownTown.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d75161.8528954807!2d-34.9606218773585!3d-8.080227779641723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua%20Antigo%20Tenorio%2C%20105%20-%20Centro%20-%20Recife!5e0!3m2!1sen!2sbr!4v1743630804658!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowDownTown.document.write("<br/><br/>");
+                    WindowDownTown.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <h2 class="city-title">Vitória de Santo Antão</h2>
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
@@ -747,13 +903,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rodovia Luiz Gonzaga Km 54, 65 - Centro - Vitória de
-                        Santo Antão
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationCTaipa()"
+                        >
+                          Rodovia Luiz Gonzaga Km 54, 65 - Vitória de Santo
+                          Antão
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationCTaipa() {
+                    var WindowCTaipa = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowCTaipa.document.write("<body bgcolor=black>");
+                    WindowCTaipa.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8202121205813!2d-35.26734102613052!3d-8.119780381258849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa54da8c4f91d9%3A0x9c785af7e57b282b!2sRod.%20Luiz%20Gonzaga%2C%2054%20-%20Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%2C%20PE!5e0!3m2!1sen!2sbr!4v1743631241772!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowCTaipa.document.write("<br/><br/>");
+                    WindowCTaipa.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-PI">
@@ -804,7 +985,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/restaurantemangata/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/restaurantemangata/')"
                         >
                           www.facebook.com/restaurantemangata
                         </a>
@@ -823,12 +1005,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. São Sebastião, 3900 - Frei Higino - Parnaíba
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationMangata()"
+                        >
+                          Av. São Sebastião, 3900 - Frei Higino - Parnaíba
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationMangata() {
+                    var WindowMangata = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowMangata.document.write("<body bgcolor=black>");
+                    WindowMangata.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.672001923338!2d-41.747618926200914!3d-2.9104228395557623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2548da8e3145%3A0x4126d4eb92358e06!2sAv.%20S%C3%A3o%20Sebasti%C3%A3o%2C%203900%20-%20Frei%20Higino%2C%20Parna%C3%ADba%20-%20PI%2C%2064202-300!5e0!3m2!1sen!2sbr!4v1743633216358!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowMangata.document.write("<br/><br/>");
+                    WindowMangata.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -873,7 +1080,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/ConfeitariaEmporio/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/ConfeitariaEmporio/')"
                         >
                           www.facebook.com/ConfeitariaEmporio
                         </a>
@@ -892,12 +1100,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. Pinheiro Machado, 76 - Rodoviária - Parnaíba
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationEmporio()"
+                        >
+                          Av. Pinheiro Machado, 76 - Rodoviária - Parnaíba
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationEmporio() {
+                    var WindowEmporio = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowEmporio.document.write("<body bgcolor=black>");
+                    WindowEmporio.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.674276904171!2d-41.756249826201035!3d-2.9097793395533476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2550f245f013%3A0x6b45906ebcf4007f!2sAv.%20Dep.%20Pinheiro%20Machado%2C%2076%20-%20Rodovi%C3%A1ria%2C%20Parna%C3%ADba%20-%20PI%2C%2064208-015!5e0!3m2!1sen!2sbr!4v1743637343243!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowEmporio.document.write("<br/><br/>");
+                    WindowEmporio.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <h2 class="city-title">Teresina</h2>
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
@@ -941,7 +1174,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/vignoliteresina/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/vignoliteresina/')"
                         >
                           www.instagram.com/vignoliteresina
                         </a>
@@ -960,12 +1194,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. Dom Severino, 1631 - Fátima - Teresina
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationVignoli()"
+                        >
+                          Av. Dom Severino, 1631 - Fátima - Teresina
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationVignoli() {
+                    var WindowVignoli = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowVignoli.document.write("<body bgcolor=black>");
+                    WindowVignoli.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.209105530212!2d-42.78926132617732!3d-5.069828751464455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3989ea183901%3A0x37016018891b53b6!2sAv.%20Dom%20Severino%2C%201631%20-%20F%C3%A1tima%2C%20Teresina%20-%20PI%2C%2064051-200!5e0!3m2!1sen!2sbr!4v1743637758454!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowVignoli.document.write("<br/><br/>");
+                    WindowVignoli.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-RN">
@@ -1016,7 +1275,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://manary.com.br/gastronomia/"
+                          href=""
+                          onclick="window.open('https://manary.com.br/gastronomia/')"
                         >
                           manary.com.br/gastronomia
                         </a>
@@ -1035,13 +1295,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Francisco Gurgel, 9067 - Praia de Ponta Negra -
-                        Natal
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationManary()"
+                        >
+                          Rua Francisco Gurgel, 9067 - Praia de Ponta Negra -
+                          Natal
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationManary() {
+                    var WindowManary = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowManary.document.write("<body bgcolor=black>");
+                    WindowManary.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.8700523935!2d-35.17979712616641!3d-5.873883557845819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff2c1db1ebe3%3A0xffd954f0dde1adf5!2sManary%20Praia%20Hotel!5e0!3m2!1sen!2sbr!4v1743638213875!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowManary.document.write("<br/><br/>");
+                    WindowManary.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -1084,7 +1369,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/sigatutti/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/sigatutti/')"
                         >
                           www.instagram.com/sigatutti
                         </a>
@@ -1103,12 +1389,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Potengi, 617 - Petrópolis - Natal
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationTutti()"
+                        >
+                          Rua Potengi, 617 - Petrópolis - Natal
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationTutti() {
+                    var WindowTutti = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowTutti.document.write("<body bgcolor=black>");
+                    WindowTutti.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.49893107286!2d-35.19979682616772!3d-5.784966957088221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3006b94cf20eb%3A0xef5b3971f75ea952!2sR.%20Potengi%2C%20617%20-%20Petr%C3%B3polis%2C%20Natal%20-%20RN%2C%2059020-030!5e0!3m2!1sen!2sbr!4v1743638678703!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowTutti.document.write("<br/><br/>");
+                    WindowTutti.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionNE-SE">
@@ -1159,7 +1470,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.instagram.com/divinoaju/"
+                          href=""
+                          onclick="window.open('https://www.instagram.com/divinoaju/')"
                         >
                           www.instagram.com/divinoaju
                         </a>
@@ -1178,12 +1490,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua José Ramos Silva, 99 - 13 de Julho - Aracaju
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationDiVino()"
+                        >
+                          Rua José Ramos Silva, 99 - 13 de Julho - Aracaju
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationDiVino() {
+                    var WindowDiVino = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowDiVino.document.write("<body bgcolor=black>");
+                    WindowDiVino.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4235822583014!2d-37.05152922607359!3d-10.931341222134524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab38fbba5b5c5%3A0x680fc90b884a1d07!2sR.%20Jos%C3%A9%20Ramos%20da%20Silva%2C%2099%20-%2013%20de%20Julho%2C%20Aracaju%20-%20SE%2C%2049020-200!5e0!3m2!1sen!2sbr!4v1743639000221!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowDiVino.document.write("<br/><br/>");
+                    WindowDiVino.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
           </div>
@@ -1200,9 +1537,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
-        <!----------------------------------------------------------------->
+        <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

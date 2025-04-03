@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
     <link href="../Lib/classf_RS.css" rel="stylesheet" />
+    <link href="../Lib/classf_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -97,10 +98,10 @@
         <!---------------------------------------------------------------------->
         <!---->
         <!----------------------- STATES AND CITYS PARTERS --------------------->
-        <div class="regionS-searchbox-edit">
-          <div class="regionS-searchbox">
-            <div class="regionS-searchbox-title">
-              <h2 class="title-regionS-searchbox">REGIÃO SUL</h2>
+        <div class="regionXX-searchbox-edit">
+          <div class="regionXX-searchbox">
+            <div class="regionXX-searchbox-title">
+              <h2 class="title-regionXX-searchbox">REGIÃO SUL</h2>
             </div>
             <div id="regionS-PR">
               <h3 class="title-state">Paraná (PR)</h3>
@@ -117,7 +118,7 @@
                       <td class="button-cell" rowspan="4">
                         <button
                           class="partner-button"
-                          onclick="document.toscana1.src='../Partners/Partners-Images/RS/fipr-toscana1.jpg'"
+                          onclick="document.toscana.src='../Partners/Partners-Images/RS/fipr-toscana1.jpg'"
                         >
                           <img
                             class="partner-button-image"
@@ -129,13 +130,13 @@
                         <img
                           class="partner-images"
                           src="../Partners/Partners-Images/RS/fipr-toscana1.jpg"
-                          name="toscana1"
+                          name="toscana"
                         />
                       </td>
                       <td class="button-cell" rowspan="4">
                         <button
                           class="partner-button"
-                          onclick="document.toscana1.src='../Partners/Partners-Images/RS/fipr-toscana2.jpg'"
+                          onclick="document.toscana.src='../Partners/Partners-Images/RS/fipr-toscana2.jpg'"
                         >
                           <img
                             class="partner-button-image"
@@ -148,7 +149,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="http://www.instagram.com/latoscanafoz/"
+                          href=""
+                          onclick="window.open('http://www.instagram.com/latoscanafoz/')"
                         >
                           www.instagram.com/latoscanafoz/
                         </a>
@@ -163,13 +165,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Marechal Floriano Peixoto, 799, Centro - Foz do
-                        Iguaçu
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationToscana()"
+                        >
+                          Rua Marechal Floriano Peixoto, 799, Centro - Foz do
+                          Iguaçu
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationToscana() {
+                    var WindowToscana = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowToscana.document.write("<body bgcolor=black>");
+                    WindowToscana.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.729523289097!2d-54.58663002557187!3d-25.547385037544785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f691b4f71330fb%3A0x4a986cbb2f75cf10!2sR.%20Mal.%20Floriano%20Peixoto%2C%20799%20-%20Centro%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085851-020!5e0!3m2!1sen!2sbr!4v1743639505882!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowToscana.document.write("<br/><br/>");
+                    WindowToscana.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
                 <!----------------------- PARTNER BOX ---------------------->
                 <div class="partner-box">
                   <table border="7">
@@ -214,7 +241,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://lemircomidaarabe.com.br/"
+                          href=""
+                          onclick="window.open('https://lemircomidaarabe.com.br/')"
                         >
                           lemircomidaarabe.com.br/
                         </a>
@@ -233,12 +261,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Jorge Sanwais, 1146 - Centro - Foz do Iguaçu
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationLeMir()"
+                        >
+                          Rua Jorge Sanwais, 1146 - Centro - Foz do Iguaçu
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationLeMir() {
+                    var WindowLeMir = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowLeMir.document.write("<body bgcolor=black>");
+                    WindowLeMir.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.916551934036!2d-54.583264925572045!3d-25.541156437297218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6904c66d994d3%3A0xb37556a6a72d725f!2sR.%20Jorge%20Sanwais%2C%201146%20-%20Centro%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085851-150!5e0!3m2!1sen!2sbr!4v1743639956924!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowLeMir.document.write("<br/><br/>");
+                    WindowLeMir.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionS-SC">
@@ -287,7 +340,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://oxsteakhouse.com.br/"
+                          href=""
+                          onclick="window.open('https://oxsteakhouse.com.br/')"
                         >
                           oxsteakhouse.com.br
                         </a>
@@ -306,12 +360,33 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. Atlântica, 5690 - Barra Sul - Balneário Camboriú
+                        <a class="partner-link" href="" onclick="LocationOx()">
+                          Av. Atlântica, 5690 - Barra Sul - Balneário Camboriú
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationOx() {
+                    var WindowOx = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowOx.document.write("<body bgcolor=black>");
+                    WindowOx.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.7794076099894!2d-48.607984425503574!3d-27.00552699708641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b6513bf9bd3d%3A0xb79a25e48bc5076!2sAv.%20Atl%C3%A2ntica%2C%205690%20-%20Barra%20Sul%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088330-128!5e0!3m2!1sen!2sbr!4v1743640185228!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowOx.document.write("<br/><br/>");
+                    WindowOx.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionS-RS">
@@ -362,7 +437,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://carademau.com.br/"
+                          href=""
+                          onclick="window.open('https://carademau.com.br/')"
                         >
                           carademau.com.br/
                         </a>
@@ -381,12 +457,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Dos Estados, 111 Loja X - São João - Porto Alegre
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationCaraMau()"
+                        >
+                          Avenida Dos Estados, 111 Loja X - São João - Porto
+                          Alegre
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationCaraMau() {
+                    var WindowCaraMau = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowCaraMau.document.write("<body bgcolor=black>");
+                    WindowCaraMau.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.4226323900584!2d-51.190290625353896!3d-29.996018729030883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979fae6eecd6d%3A0xbc8dd5507c5f2028!2sAv.%20dos%20Estados%2C%20111%20-%20S%C3%A3o%20Jo%C3%A3o%2C%20Porto%20Alegre%20-%20RS%2C%2090200-000!5e0!3m2!1sen!2sbr!4v1743640446651!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowCaraMau.document.write("<br/><br/>");
+                    WindowCaraMau.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
           </div>
@@ -403,9 +505,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
-        <!----------------------------------------------------------------->
+        <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

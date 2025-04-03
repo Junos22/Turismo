@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
-    <link href="../Lib/c_ibsp.css" rel="stylesheet" />
+    <link href="../Lib/c_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -106,8 +106,8 @@
         <!---------------------------------------------------------------------->
         <div class="city-text-box-edit">
           <div class="city-text-box">
-            <h2 id="ilhabela">Ilhabela</h2>
-            <img class="ibsp-ph" src="../Images/City-Images/ibsp1.jpg" />
+            <h2 id="city-name">Ilhabela</h2>
+            <img class="city-ph" src="../Images/City-Images/ibsp1.jpg" />
             <p>
               <span class="first-letter">I</span>lhabela, localizada no litoral
               norte do estado de São Paulo, é um dos destinos turísticos mais
@@ -133,7 +133,7 @@
             <h3 id="turismo-ibsp">Principais pontos turísticos</h3>
             <ol>
               <li class="olist">Praia do Curral</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp2.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp2.jpg" />
               <p>
                 Uma das praias mais famosas da cidade, a Praia do Curral é
                 conhecida por suas águas claras e calmantes, ideais para banho e
@@ -147,7 +147,7 @@
                 ou praticar atividades como stand-up paddle e caiaque.
               </p>
               <li class="olist">Cachoeira da Toca</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp3.webp" />
+              <img class="city-ph" src="../Images/City-Images/ibsp3.webp" />
               <p>
                 A Cachoeira da Toca é uma das mais visitadas da ilha, famosa
                 pela beleza de suas quedas d'água e piscinas naturais. A trilha
@@ -160,7 +160,7 @@
                 uma experiência única e revigorante.
               </p>
               <li class="olist">Pico do Baepi</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp4.webp" />
+              <img class="city-ph" src="../Images/City-Images/ibsp4.webp" />
               <p>
                 O Pico do Baepi é um dos maiores atrativos para os amantes de
                 trilhas e caminhadas. Com 1.030 metros de altitude, o pico
@@ -174,7 +174,7 @@
                 mais incríveis da ilha.
               </p>
               <li class="olist">Ilha das Cabras</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp5.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp5.jpg" />
               <p>
                 A Ilha das Cabras é uma pequena ilhota situada bem perto da
                 praia central de Ilhabela, conhecida por suas águas
@@ -191,7 +191,7 @@
             <h3 id="gastronomia-ibsp">Principais pontos gastronômicos</h3>
             <ol>
               <li class="olist">Pimenta de Cheiro</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp6.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp6.jpg" />
               <p>
                 Um dos restaurantes em Ilhabela mais visitados, devido a
                 apresentar excelente comida e um cenário impressionante, com
@@ -207,7 +207,7 @@
                 <li class="ulist"><b>Localização:</b> Praia do Perequê.</li>
               </ul>
               <li class="olist">Portofino</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp7.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp7.jpg" />
               <p>
                 O restaurante Portofino oferece um cardápio contemporâneo de
                 qualidade, com opções de peixes, carnes, aves, risotos e massas.
@@ -229,7 +229,7 @@
             <h3 id="cultura-ibsp">Principais pontos culturais</h3>
             <ol>
               <li class="olist">Museu Náutico de Ilhabela</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp8.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp8.jpg" />
               <p>
                 O Museu Náutico de Ilhabela é dedicado à história da navegação e
                 da pesca artesanal, com um acervo de objetos antigos, como
@@ -247,7 +247,7 @@
                 </li>
               </ul>
               <li class="olist">Festa de Nossa Senhora D'Ajuda</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp9.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp9.jpg" />
               <p>
                 A Festa de Nossa Senhora D'Ajuda é uma celebração religiosa e
                 cultural que ocorre anualmente, com missas, procissões e festas
@@ -265,7 +265,7 @@
                 </li>
               </ul>
               <li class="olist">Centro Cultural da Vila</li>
-              <img class="ibsp-ph" src="../Images/City-Images/ibsp10.jpg" />
+              <img class="city-ph" src="../Images/City-Images/ibsp10.jpg" />
               <p>
                 O Centro Cultural da Vila é um espaço dedicado à promoção de
                 atividades culturais, com exposições, peças teatrais, shows e
@@ -293,9 +293,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
         <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

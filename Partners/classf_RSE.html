@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
     <link href="../Lib/classf_RSE.css" rel="stylesheet" />
+    <link href="../Lib/classf_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -103,10 +104,10 @@
         <!---------------------------------------------------------------------->
         <!---->
         <!----------------------- STATES AND CITYS PARTERS --------------------->
-        <div class="regionSE-searchbox-edit">
-          <div class="regionSE-searchbox">
-            <div class="regionSE-searchbox-title">
-              <h2 class="title-regionSE-searchbox">REGIÃO SUDESTE</h2>
+        <div class="regionXX-searchbox-edit">
+          <div class="regionXX-searchbox">
+            <div class="regionXX-searchbox-title">
+              <h2 class="title-regionXX-searchbox">REGIÃO SUDESTE</h2>
             </div>
             <div id="regionSE-ES">
               <h3 class="title-state">Espírito Santo (ES)</h3>
@@ -154,7 +155,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/CasaMarracini"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/CasaMarracini')"
                         >
                           www.facebook.com/CasaMarracini
                         </a>
@@ -173,13 +175,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Fernando de Abreu, 121 - Parque Areia Preta, Centro
-                        - Guarapari
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationMarracini()"
+                        >
+                          Rua Fernando de Abreu, 121 - Parque Areia Preta,
+                          Centro - Guarapari
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationMarracini() {
+                    var WindowMarracini = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowMarracini.document.write("<body bgcolor=black>");
+                    WindowMarracini.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9012694511857!2d-40.50548102577658!3d-20.673595361892193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb857b78430aaff%3A0xad1ab25334712952!2sR.%20Fernando%20de%20Abreu%2C%20121%20-%20Parque%20da%20Areia%20Preta%2C%20Guarapari%20-%20ES%2C%2029200-500!5e0!3m2!1sen!2sbr!4v1743640806449!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowMarracini.document.write("<br/><br/>");
+                    WindowMarracini.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionSE-MG">
@@ -231,7 +258,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="table-info">Café da manhã disponível</td>
+                      <td class="table-info">Café da manhã incluso</td>
                     </tr>
                     <tr>
                       <td class="table-info">
@@ -292,7 +319,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://classicobeachclub.com/urca/"
+                          href=""
+                          onclick="window.open('https://classicobeachclub.com/urca/')"
                         >
                           classicobeachclub.com/urca
                         </a>
@@ -311,12 +339,37 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Avenida Pasteur, 520 - Urca - Rio de Janeiro
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationClassico()"
+                        >
+                          Avenida Pasteur, 520 - Urca - Rio de Janeiro
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationClassico() {
+                    var WindowClassico = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowClassico.document.write("<body bgcolor=black>");
+                    WindowClassico.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.975908744716!2d-43.16680242568546!3d-22.951114339454826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x998017792d5391%3A0xbbcc9ebdd8d08181!2sAv.%20Pasteur%2C%20520%20-%20Urca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022290-255!5e0!3m2!1sen!2sbr!4v1743641269325!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowClassico.document.write("<br/><br/>");
+                    WindowClassico.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionSE-SP">
@@ -328,7 +381,7 @@
                   <table border="7">
                     <tr>
                       <th class="table-title" colspan="4">
-                        Bar do Peixe Peixe e Frutos do Mar
+                        Bar do Peixe e Frutos do Mar
                       </th>
                     </tr>
                     <tr>
@@ -369,7 +422,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://bardopeixe.com.br/"
+                          href=""
+                          onclick="window.open('https://bardopeixe.com.br/')"
                         >
                           bardopeixe.com.br
                         </a>
@@ -388,13 +442,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Estrada das Lágrimas, 241 - São José - São Caetano do
-                        Sul
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationBarPeixe()"
+                        >
+                          Estrada das Lágrimas, 241 - São José - São Caetano do
+                          Sul
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationBarPeixe() {
+                    var WindowBarPeixe = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowBarPeixe.document.write("<body bgcolor=black>");
+                    WindowBarPeixe.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1896979375974!2d-46.58272442565657!3d-23.633376564239963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cba6cc951b7%3A0xf6c02beb113f915c!2sEstr.%20das%20L%C3%A1grimas%2C%20241%20-%20S%C3%A3o%20Jos%C3%A9%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009581-300!5e0!3m2!1sen!2sbr!4v1743641655830!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowBarPeixe.document.write("<br/><br/>");
+                    WindowBarPeixe.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
           </div>
@@ -411,9 +490,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
-        <!----------------------------------------------------------------->
+        <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>

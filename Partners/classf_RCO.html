@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EASY ROAD</title>
     <link href="../Lib/classf_RCO.css" rel="stylesheet" />
+    <link href="../Lib/classf_global.css" rel="stylesheet" />
   </head>
   <body>
     <div class="screen-division">
@@ -102,13 +103,14 @@
         </div>
         <!---------------------------------------------------------------------->
         <!---->
-        <!----------------------- STATES AND CITYS PARTERS --------------------->
-        <div class="regionCO-searchbox-edit">
-          <div class="regionCO-searchbox">
-            <div class="regionCO-searchbox-title">
-              <h2 class="title-regionCO-searchbox">REGIÃO CENTRO-OESTE</h2>
+        <!----------------------- STATES AND CITYS PARTNERS --------------------->
+        <div class="regionXX-searchbox-edit">
+          <div class="regionXX-searchbox">
+            <div class="regionXX-searchbox-title">
+              <h2 class="title-regionXX-searchbox">REGIÃO CENTRO-OESTE</h2>
             </div>
             <div id="regionCO-DF">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Distrito Federal (DF)</h3>
               <div class="city-state">
                 <h2 class="city-title">Brasília / DF</h2>
@@ -156,7 +158,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.nonnaaugusta.com.br/"
+                          href=""
+                          onclick="window.open('https://www.nonnaaugusta.com.br/')"
                         >
                           www.nonnaaugusta.com.br
                         </a>
@@ -175,15 +178,41 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Quadra Cln 413 Bloco E Loja 69 - Brasília
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationNonnaAugusta()"
+                        >
+                          Quadra Cln 413 Bloco E Loja 69 - Brasília
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationNonnaAugusta() {
+                    var WindowNonnaAugusta = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowNonnaAugusta.document.write("<body bgcolor=black>");
+                    WindowNonnaAugusta.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.075959511564!2d-47.885797125945935!3d-15.74712042179066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bc0ae9debb7%3A0xd2d90902330b9f12!2sNonna%20Augusta%20Trattoria%3A%20Comida%20Italiana%2C%20Delivery%2C%20Risoto%2C%20Asa%20Norte%20Bras%C3%ADlia%20DF!5e0!3m2!1sen!2sbr!4v1743560831624!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowNonnaAugusta.document.write("<br/><br/>");
+                    WindowNonnaAugusta.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionCO-GO">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Goiás (GO)</h3>
               <div class="city-state">
                 <h2 class="city-title">Pirenópolis</h2>
@@ -231,7 +260,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://romariabistro.com.br/"
+                          href=""
+                          onclick="window.open('https://romariabistro.com.br/')"
                         >
                           romariabistro.com.br
                         </a>
@@ -250,16 +280,42 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Ipê, Condomínio Alto da Lapa n. 1 - Alto da Lapa,
-                        Pirenópolis
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationRomaria()"
+                        >
+                          Rua Ipê, Condomínio Alto da Lapa n. 1 - Alto da Lapa,
+                          Pirenópolis
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationRomaria() {
+                    var WindowRomaria = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowRomaria.document.write("<body bgcolor=black>");
+                    WindowRomaria.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.052137985639!2d-48.970376325942674!3d-15.85385682441996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935c6bf08852ba67%3A0xc0a51737562c6cde!2sDivina%20Pousada!5e0!3m2!1sen!2sbr!4v1743564349982!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowRomaria.document.write("<br/><br/>");
+                    WindowRomaria.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionCO-MT">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Mato Grosso (MT)</h3>
               <div class="city-state">
                 <h2 class="city-title">Cuiabá</h2>
@@ -305,7 +361,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/BoiGrillOficial/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/BoiGrillOficial/')"
                         >
                           www.facebook.com/BoiGrillOficial
                         </a>
@@ -324,15 +381,41 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Av. Dr. Hélio Ribeiro, 3 - Parque das Águas - Cuiabá
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationBoiGrill()"
+                        >
+                          Av. Dr. Hélio Ribeiro, 3 - Parque das Águas - Cuiabá
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationBoiGrill() {
+                    var WindowBoiGrill = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowBoiGrill.document.write("<body bgcolor=black>");
+                    WindowBoiGrill.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.4438381635687!2d-56.08443012595137!3d-15.567917617416965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db10fe144daa3%3A0x21f30899fc94ea20!2sAv.%20Dr.%20H%C3%A9lio%20Ribeiro%2C%203%20-%20Alvorada%2C%20Cuiab%C3%A1%20-%20MT%2C%2078048-000!5e0!3m2!1sen!2sbr!4v1743564650460!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowBoiGrill.document.write("<br/><br/>");
+                    WindowBoiGrill.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
             <div id="regionCO-MS">
+              <!--Estilização específica desta div (com id) está no "classf_RCO.css" e tudo o que estiver dentro dela está no "classf_global.css"-->
               <h3 class="title-state">Mato Grosso do Sul (MS)</h3>
               <div class="city-state">
                 <h2 class="city-title">Ponta Porã</h2>
@@ -380,7 +463,8 @@
                       <td class="table-info">
                         <a
                           class="partner-link"
-                          href="https://www.facebook.com/armazemartebistro/"
+                          href=""
+                          onclick="window.open('https://www.facebook.com/armazemartebistro/')"
                         >
                           www.facebook.com/armazemartebistro
                         </a>
@@ -399,13 +483,38 @@
                     </tr>
                     <tr>
                       <td class="table-info">
-                        Rua Baltazar Saldanha, 1976 - Jardim Ipanema - Ponta
-                        Porã
+                        <a
+                          class="partner-link"
+                          href=""
+                          onclick="LocationArmazemArt()"
+                        >
+                          Rua Baltazar Saldanha, 1976 - Jardim Ipanema - Ponta
+                          Porã
+                        </a>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <!--------------------------------------------->
+                <!------------------ SCRIPT FOR LOCATION ------------------>
+                <script>
+                  function LocationArmazemArt() {
+                    var WindowArmazemArt = window.open(
+                      "",
+                      "Location",
+                      "width=700,height=545,top=150px,left=500px"
+                    );
+                    WindowArmazemArt.document.write("<body bgcolor=black>");
+                    WindowArmazemArt.document.write(
+                      "<center><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.5200115787347!2d-55.72100252570314!3d-22.522185124237257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94626f0152287825%3A0x787c036f69cbead0!2sR.%20Baltazar%20Saldanha%2C%201976%20-%20Vila%20Militar%2C%20Ponta%20Por%C3%A3%20-%20MS%2C%2079900-000!5e0!3m2!1sen!2sbr!4v1743564869922!5m2!1sen!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></center>"
+                    );
+                    WindowArmazemArt.document.write("<br/><br/>");
+                    WindowArmazemArt.document.write(
+                      "<center><input type=submit value='Fechar' onclick=window.close()></center>"
+                    );
+                  }
+                </script>
+                <!----------------------------------------------------------->
               </div>
             </div>
           </div>
@@ -422,9 +531,46 @@
               Todos os direitos reservados a EASY ROAD™ 2025.
             </h4>
           </div>
+          <a class="bottom-banner-email" onclick="ContactWindow()">
+            <img class="bottom-banner-email-gif" src="../Images/env10.gif" />
+          </a>
         </div>
-        <!----------------------------------------------------------------->
+        <!--------------------------------------------------------------------------->
       </div>
     </div>
+    <!------------------------- SCRIPT FOR CONTACT WINDOW ----------------------->
+    <script>
+      function ContactWindow() {
+        var hiWindow = window.open(
+          "",
+          "Contact",
+          "width=464,height=420,top=150px,left=500px"
+        );
+        hiWindow.document.write(
+          "<head><title>EASY ROAD - Agradecemos a visita</title></head>"
+        );
+        hiWindow.document.write("<body bgcolor=black>");
+        hiWindow.document.write(
+          "</br><center><h2><b><font color=gold size=20px>FALE CONOSCO</font></b></h2></center>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Nome:</font></b></span><input type=text size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Email:</font></b></span><input type=email size=52></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Assunto:</font></b></span><input type=text size=50></br></br>"
+        );
+        hiWindow.document.write(
+          "<span><b><font color=gold>Descrição:</font></b></span><textarea cols=48 rows=8 placeholder='Motivo do contato: sugestões, dúvidas, parcerias... Acrescente outras formas de contato se necessário, CNPJ, etc.'></textarea>"
+        );
+        hiWindow.document.write("</br></br>");
+        hiWindow.document.write(
+          "<center><input type=submit onclick=window.close()></center>"
+        );
+      }
+    </script>
+    <!----------------------------------------------------------------------------->
   </body>
 </html>
